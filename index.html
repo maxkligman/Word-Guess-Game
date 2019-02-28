@@ -1,0 +1,57 @@
+<html lang="en-us"><head>
+
+    <meta charset="UTF-8">
+    <title>Coding Boot Camp - Word Guess</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    </head>
+
+    <body style="background-image:url('/Users/Max/Desktop/Code/bootCampPractice/week3/wordGuessGame/solidarity.gif');
+        background-size:100%;
+        background-repeat: repeat-y;
+        background-attachment: fixed;
+        height:100%;
+        width:100%;">
+
+    <div class="container">
+
+        <div class="jumbotron text-center text-warning bg-danger" style="opacity: .8">
+        <div class="container">
+            <h1><strong>GUESS THE NOUN</strong></h1>
+            <h2>PLEASE PARTICIPATE IN THIS ACTIVITY</h2>
+            <small>TYPE ANY KEY TO BEGIN</small>
+        </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card text-warning bg-danger" style="opacity: .8">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-warning bg-danger">WINS: <span id="win-counter">0</span></li>
+                        <li class="list-group-item text-warning bg-danger">LOSSES: <span id="loss-counter">0</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-6"> 
+                <div class="card text-warning bg-danger" style="opacity: .8">
+                    <div class="card-header text-center">
+                        <strong>PLEASE GUESS WORD</strong>
+                    </div>
+                    <div class="card-header text-center" id="word-blanks">
+                        <strong>_ _ _ _ _ _ _ _ _ </strong>
+                    </div>
+                    <ul class="list-group list-group-flush" style="opacity: .8">
+                        <li class="list-group-item text-warning bg-danger" id="wrong-guesses">WRONG GUESSES: </li>
+                        <li class="list-group-item text-warning bg-danger" id="guesses-left">GUESSES LEFT: </li>
+                    </ul>
+                </div>  
+               
+            </div>
+        </div>
+    </div>
+    <script src="logic.js"></script>
+    
+    </body>
+</html>
